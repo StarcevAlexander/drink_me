@@ -1,0 +1,10 @@
+<div class="main-container">
+  <h1>{{ cocktails().length }} случайных коктелей для отличного вечера</h1>
+  <div class="card-container">
+    @for (cocktail of cocktails(); track $index) {
+      <div class="card">
+        <app-drink-card [cocktail]="cocktail"></app-drink-card>
+      </div>
+    }
+  </div>
+</div>

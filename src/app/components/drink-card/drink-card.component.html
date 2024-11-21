@@ -1,0 +1,8 @@
+<p-card [header]="cocktail()?.strDrink" [subheader]="cocktail()?.strAlcoholic">
+  <img [src]="cocktail()?.strDrinkThumb ?? 'https://www.art-helicon.ru/picture/s16870.jpg'"
+       alt="{{cocktail()?.strDrink}}"/>
+  <div>
+    <p>{{ cocktail()?.strInstructions | slice:0:100 }}</p>
+    <button pButton label="Подробнее" [routerLink]="['/cocktail', cocktail()?.idDrink]"></button>
+  </div>
+</p-card>

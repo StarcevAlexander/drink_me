@@ -1,0 +1,47 @@
+.cocktail-image {
+  width: 75%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.cocktail-card {
+  padding: 34px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #ffffff;
+}
+
+.cocktail-title {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.cocktail-info {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.ingredients-title {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ingredients-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.p-grid {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}

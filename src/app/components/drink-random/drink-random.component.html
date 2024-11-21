@@ -1,0 +1,16 @@
+<div class="p-grid p-justify-center">
+  <div class="p-col-12 p-md-6">
+    <p-card styleClass="cocktail-card">
+      <h2 class="cocktail-title">{{ cocktail()?.strDrink }}</h2>
+      <img [src]="cocktail()?.strDrinkThumb" alt="{{ cocktail()?.strDrink }}" class="cocktail-image"/>
+      <p class="cocktail-info"><strong>Glass:</strong> {{ cocktail()?.strGlass }}</p>
+      <p class="cocktail-info"><strong>Instructions:</strong> {{ cocktail()?.strInstructions }}</p>
+      <h3 class="ingredients-title">Ingredients:</h3>
+      <ul class="ingredients-list">
+        @for (ingredient of getIngredients(cocktail()!); track $index) {
+          <li>{{ ingredient }}</li>
+        }
+      </ul>
+    </p-card>
+  </div>
+</div>

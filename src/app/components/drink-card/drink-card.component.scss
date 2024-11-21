@@ -1,0 +1,33 @@
+:host {
+  margin-bottom: 20px;
+  min-height: 50vh;
+}
+
+p-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: gray;
+  border-radius: 0 0 10% 10%;
+  color: white;
+  font-size: 18px
+}
+
+p {
+  min-height: 3rem;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+button {
+  border-radius: 20px;
+  font-size: larger;
+  min-height: 30px;
+  min-width: 200px;
+  margin-bottom: 15px;
+}
